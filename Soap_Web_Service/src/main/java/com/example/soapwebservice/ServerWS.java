@@ -19,14 +19,4 @@ public class ServerWS {
         Endpoint.publish(url, server.getProductWebService());
 
     }
-    private void RunTheServerAndFillTheDB() {
-        String url = "http://localhost:8087/";
-        try {
-            Endpoint.publish(url, productWebService);
-            System.out.println("Web service deployed at: " + url);
-        } catch (Exception e) {
-            System.err.println("Failed to publish web service: " + e.getMessage());
-            e.printStackTrace();
-        }
-    }
 }
